@@ -30,7 +30,9 @@ std::string floatToRoman(float num) {
 class $modify(rnPlayLayer, PlayLayer) {
     void updateProgressbar() {
         PlayLayer::updateProgressbar();
-        float ret = this->getCurrentPercent();
-        m_percentageLabel->setString((floatToRoman(ret) + std::string("%")).c_str());
+        if (Mod::get()->getSettingValue<bool>("enabled")) {
+            float ret = this->getCurrentPercent();
+            m_percentageLabel->setString((floatToRoman(ret) + std::string("%")).c_str());
+        }
     }
 };

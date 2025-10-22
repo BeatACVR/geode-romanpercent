@@ -10,8 +10,23 @@
 	"name": "Roman Percent",
 	"version": "v1.0.0",
 	"developer": "Beat",
-	"description": "",
+	"description": "Roman numerals in progressbar percentage,",
 	"dependencies": {
 		"geode.node-ids": ">=v1.20.0"
+	}, 
+	"links": {
+		"source": "https://github.com/BeatACVR/geode-romanpercent"
+	},
+	"tags": [
+		"joke",
+		"interface",
+		"modtober25"
+	],
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enabled",
+			"default": true
+		}
 	}
 }
